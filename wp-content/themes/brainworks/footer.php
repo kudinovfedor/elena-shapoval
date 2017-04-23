@@ -11,11 +11,13 @@
     <?php endif; ?>
     
     </div><!--wrapper end-->
+<?php /*
 <footer id="page-footer">
     <p>
         <?php _e('Developed by', 'brainworks') ?> <a href="http://brainworks.com.ua/" target="_blank" class="text-underline">BRAIN WORKS</a> &copy; <?php echo date('Y'); ?>
     </p>
 </footer>
+*/ ?>
 <?php locate_template("analyticstracking.php", true) ?>
 <?php wp_footer(); ?>
 </body>

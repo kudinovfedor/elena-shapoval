@@ -1,1 +1,57 @@
+.text {
+  &-left {
+    text-align: left;
+  }
 
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-lowercase {
+    text-transform: lowercase;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-nowrap {
+    white-space: nowrap;
+  }
+
+  &-italic {
+    font-style: italic;
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-small-caps {
+    font-variant: small-caps;
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-overline {
+    text-decoration: overline;
+  }
+
+  &-line-through {
+    text-decoration: line-through;
+  }
+}

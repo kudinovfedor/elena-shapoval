@@ -51,10 +51,10 @@ button {
     font-size: 14px;
 }
 
-button[type="submit"] {
-	@include button-style;
-	padding: 5px 10px;
-}
+//button[type="submit"] {
+//	@include button-style;
+//	padding: 5px 10px;
+//}
 
 @media #{$mobile} {
 	.button-large {

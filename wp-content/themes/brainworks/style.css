@@ -12,7 +12,6 @@ Version: 3.2
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 /* CORE */
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Lobster&subset=cyrillic");
 /* line 1, ../wp-content/themes/brainworks/sass/core/_reset.scss */
 html,
 body,
@@ -143,8 +142,27 @@ ul {
 }
 
 @font-face {
-  font-family: Docker;
-  src: url(../../fonts/Docker-One.ttf);
+  font-family: 'Geometria';
+  src: url("fonts/geometria/Geometria.eot");
+  src: local("Geometria"), url("fonts/geometria/Geometria.eot?#iefix") format("embedded-opentype"), url("fonts/geometria/Geometria.woff2") format("woff2"), url("fonts/geometria/Geometria.woff") format("woff"), url("fonts/geometria/Geometria.ttf") format("truetype"), url("fonts/geometria/Geometria.svg#Geometria") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("fonts/geometria/Geometria-Light.eot");
+  src: local("Geometria Light"), local("Geometria-Light"), url("fonts/geometria/Geometria-Light.eot?#iefix") format("embedded-opentype"), url("fonts/geometria/Geometria-Light.woff2") format("woff2"), url("fonts/geometria/Geometria-Light.woff") format("woff"), url("fonts/geometria/Geometria-Light.ttf") format("truetype"), url("fonts/geometria/Geometria-Light.svg#Geometria-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("fonts/geometria/Geometria-Bold.eot");
+  src: local("Geometria Bold"), local("Geometria-Bold"), url("fonts/geometria/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/geometria/Geometria-Bold.woff2") format("woff2"), url("fonts/geometria/Geometria-Bold.woff") format("woff"), url("fonts/geometria/Geometria-Bold.ttf") format("truetype"), url("fonts/geometria/Geometria-Bold.svg#Geometria-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* line 1, ../wp-content/themes/brainworks/sass/core/_wp-core.scss */
@@ -4294,31 +4312,9 @@ strong {
 }
 
 /* PAGES */
-/* line 1, ../wp-content/themes/brainworks/sass/pages/_single-post.scss */
-section {
-  text-align: justify;
-}
-
-/* line 4, ../wp-content/themes/brainworks/sass/pages/_single-post.scss */
-section img {
-  margin-bottom: 20px;
-  width: 100%;
-  height: auto;
-}
-
 /* line 13, ../wp-content/themes/brainworks/sass/pages/_single-post.scss */
 ol.commentlist .comment-body {
   margin-bottom: 25px;
-}
-
-/* line 1, ../wp-content/themes/brainworks/sass/pages/_blog-page.scss */
-article[role="article"] {
-  text-align: justify;
-}
-
-/* line 5, ../wp-content/themes/brainworks/sass/pages/_blog-page.scss */
-section {
-  margin-bottom: 20px;
 }
 
 /* ELEMENTS */
@@ -4430,7 +4426,7 @@ i.button-style {
 /* line 117, ../wp-content/themes/brainworks/sass/elements/_responsive-titles.scss */
 h1, h2, h3, h4, h5, h6, h1.hero-title {
   color: #3575D3;
-  font-family: "Lobster", cursive;
+  font-family: "Geometria", "Arial", sans-serif;
 }
 
 /* line 121, ../wp-content/themes/brainworks/sass/elements/_responsive-titles.scss */
@@ -4765,38 +4761,6 @@ button {
   outline: 0;
 }
 
-/* line 54, ../wp-content/themes/brainworks/sass/elements/_buttons.scss */
-button[type="submit"] {
-  border: none;
-  border-radius: 4px;
-  background-color: #8AD331;
-  color: #ffffff;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-align: center;
-  font-weight: 700;
-  padding: 5px 10px;
-}
-
-/* line 11, ../wp-content/themes/brainworks/sass/elements/_buttons.scss */
-button[type="submit"]:hover {
-  transition: all .3s;
-  background-color: #a2dc5b;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-/* line 17, ../wp-content/themes/brainworks/sass/elements/_buttons.scss */
-button[type="submit"]:active {
-  transition: all .3s;
-  background-color: #8AD331;
-  box-shadow: none;
-}
-
-/* line 23, ../wp-content/themes/brainworks/sass/elements/_buttons.scss */
-button[type="submit"]:focus {
-  outline: 0;
-}
-
 @media (max-width: 544px) {
   /* line 60, ../wp-content/themes/brainworks/sass/elements/_buttons.scss */
   .button-large {
@@ -5038,6 +5002,76 @@ hr.style-four {
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
+/* line 2, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 6, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 10, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 14, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* line 18, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* line 22, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+/* line 26, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 30, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* line 34, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-italic {
+  font-style: italic;
+}
+
+/* line 38, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-bold {
+  font-weight: bold;
+}
+
+/* line 42, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-small-caps {
+  font-variant: small-caps;
+}
+
+/* line 46, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-underline {
+  text-decoration: underline;
+}
+
+/* line 50, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-overline {
+  text-decoration: overline;
+}
+
+/* line 54, ../wp-content/themes/brainworks/sass/elements/_other.scss */
+.text-line-through {
+  text-decoration: line-through;
+}
+
 /* BLOCKS */
 /* line 1, ../wp-content/themes/brainworks/sass/blocks/_header.scss */
 #pre-header {
@@ -5231,10 +5265,10 @@ body {
   margin: 0;
   min-height: 100%;
   min-width: 320px;
-  background-color: white;
-  color: #000000;
-  font-family: "Comfortaa", cursive;
-  font-weight: 300;
+  background-color: #fff;
+  color: #000;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: normal;
   overflow-x: hidden;
 }
 
@@ -5321,49 +5355,88 @@ body {
   list-style: none;
 }
 
-/* line 165, ../wp-content/themes/brainworks/style.scss */
+/* line 164, ../wp-content/themes/brainworks/style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+/* line 170, ../wp-content/themes/brainworks/style.scss */
+p {
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 0 0 20px;
+}
+
+/* line 182, ../wp-content/themes/brainworks/style.scss */
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media only screen and (min-width: 1170px) {
-  /* line 165, ../wp-content/themes/brainworks/style.scss */
+  /* line 182, ../wp-content/themes/brainworks/style.scss */
   .container {
     width: 1170px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
-/* line 175, ../wp-content/themes/brainworks/style.scss */
+/* line 196, ../wp-content/themes/brainworks/style.scss */
+.logo-nav {
+  display: table;
+  width: 100%;
+}
+
+/* line 201, ../wp-content/themes/brainworks/style.scss */
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+/* line 208, ../wp-content/themes/brainworks/style.scss */
+.header-logo, .header-nav {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 215, ../wp-content/themes/brainworks/style.scss */
 .lang {
   display: inline-block;
   padding: 5px;
   background-color: #000;
 }
 
-/* line 182, ../wp-content/themes/brainworks/style.scss */
+/* line 222, ../wp-content/themes/brainworks/style.scss */
 .lang-item:not(:last-child) {
   margin-bottom: 5px;
 }
 
-/* line 187, ../wp-content/themes/brainworks/style.scss */
+/* line 227, ../wp-content/themes/brainworks/style.scss */
 .lang-link, .lang-flag {
   display: block;
 }
 
-/* line 192, ../wp-content/themes/brainworks/style.scss */
+/* line 232, ../wp-content/themes/brainworks/style.scss */
 .lang-link {
   width: 32px;
   height: 23px;
   background-color: #ccc;
 }
 
-/* line 204, ../wp-content/themes/brainworks/style.scss */
+/* line 244, ../wp-content/themes/brainworks/style.scss */
 .social-item {
   margin-bottom: 4px;
 }
 
-/* line 208, ../wp-content/themes/brainworks/style.scss */
+/* line 248, ../wp-content/themes/brainworks/style.scss */
 .social-link {
   cursor: pointer;
   display: block;
@@ -5372,18 +5445,40 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: #000;
+  background: none no-repeat center center;
 }
 
-/* line 218, ../wp-content/themes/brainworks/style.scss */
+/* line 258, ../wp-content/themes/brainworks/style.scss */
+.social-vk {
+  background-image: url("images/social/vk.png");
+}
+
+/* line 262, ../wp-content/themes/brainworks/style.scss */
+.social-fb {
+  background-image: url("images/social/facebook.png");
+}
+
+/* line 265, ../wp-content/themes/brainworks/style.scss */
+.social-fb-big {
+  width: 58px;
+  height: 58px;
+  background-image: url("images/social/facebook-big.png");
+}
+
+/* line 273, ../wp-content/themes/brainworks/style.scss */
+.social-inst {
+  background-image: url("images/social/instagram.png");
+}
+
+/* line 278, ../wp-content/themes/brainworks/style.scss */
 iframe {
   max-width: 100%;
   width: 100%;
   border: 0;
 }
 
-/* line 224, ../wp-content/themes/brainworks/style.scss */
-.google-container {
+/* line 284, ../wp-content/themes/brainworks/style.scss */
+.videp-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 35px;
@@ -5391,12 +5486,291 @@ iframe {
   overflow: hidden;
 }
 
-/* line 231, ../wp-content/themes/brainworks/style.scss */
-.google-container iframe {
+/* line 291, ../wp-content/themes/brainworks/style.scss */
+.videp-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   max-height: 455px;
+}
+
+/* line 302, ../wp-content/themes/brainworks/style.scss */
+.adv-item {
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -2px 20px;
+}
+
+/* line 309, ../wp-content/themes/brainworks/style.scss */
+.adv-header {
+  display: block;
+}
+
+/* line 313, ../wp-content/themes/brainworks/style.scss */
+.adv p {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+/* line 319, ../wp-content/themes/brainworks/style.scss */
+.section {
+  padding-top: 4.5%;
+  padding-bottom: 4.5%;
+}
+
+/* line 323, ../wp-content/themes/brainworks/style.scss */
+.section-sub-header {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 3%;
+}
+
+/* line 332, ../wp-content/themes/brainworks/style.scss */
+.section-header + .certificate {
+  margin-top: 5%;
+}
+
+/* line 337, ../wp-content/themes/brainworks/style.scss */
+.section-title {
+  display: inline-block;
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+  margin: 0 0 25px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* line 348, ../wp-content/themes/brainworks/style.scss */
+.section-title--light {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* line 355, ../wp-content/themes/brainworks/style.scss */
+.diamond {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background: url("images/diamont.png") no-repeat center center;
+}
+
+/* line 362, ../wp-content/themes/brainworks/style.scss */
+.diamond-wrapper {
+  display: block;
+  margin-bottom: 3%;
+}
+
+/* line 368, ../wp-content/themes/brainworks/style.scss */
+.certificates {
+  background: #373737 url("images/certificate-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 374, ../wp-content/themes/brainworks/style.scss */
+.certificate-item {
+  margin-bottom: 20px;
+}
+
+/* line 378, ../wp-content/themes/brainworks/style.scss */
+.certificate + p {
+  margin-top: 5%;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* line 385, ../wp-content/themes/brainworks/style.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 390, ../wp-content/themes/brainworks/style.scss */
+.form-row {
+  margin-bottom: 22px;
+}
+
+/* line 394, ../wp-content/themes/brainworks/style.scss */
+.form-field {
+  width: 100%;
+  border: 3px solid #000;
+  padding: 11px 20px;
+  font-size: 24px;
+  line-height: 1.3;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+/* line 402, ../wp-content/themes/brainworks/style.scss */
+.form-field:focus {
+  border-color: rgba(255, 166, 221, 0.5);
+}
+
+/* line 408, ../wp-content/themes/brainworks/style.scss */
+.btn {
+  border: 1px solid #000;
+  background: none;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.3;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+  -moz-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+/* line 421, ../wp-content/themes/brainworks/style.scss */
+.btn-default {
+  border: 3px solid #000;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 11px 25px;
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 430, ../wp-content/themes/brainworks/style.scss */
+.btn-default:hover, .btn-default:focus {
+  background-color: #000;
+  color: #fff;
+}
+
+/* line 437, ../wp-content/themes/brainworks/style.scss */
+.btn-inverse {
+  background-color: #000;
+  color: #fff;
+}
+
+/* line 441, ../wp-content/themes/brainworks/style.scss */
+.btn-inverse:hover, .btn-inverse:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 448, ../wp-content/themes/brainworks/style.scss */
+.btn-small {
+  font-size: 18px;
+  text-transform: none;
+  padding: 2px 20px;
+  font-weight: normal;
+  border-width: 2px;
+}
+
+/* line 456, ../wp-content/themes/brainworks/style.scss */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 462, ../wp-content/themes/brainworks/style.scss */
+.footer {
+  font-weight: 300;
+  color: #fff;
+  background-color: #000;
+  padding: 24px 0;
+}
+
+/* line 468, ../wp-content/themes/brainworks/style.scss */
+.footer p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/* line 473, ../wp-content/themes/brainworks/style.scss */
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1169px) {
+  /* line 481, ../wp-content/themes/brainworks/style.scss */
+  .adv p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 488, ../wp-content/themes/brainworks/style.scss */
+  .section-title {
+    font-size: 26px;
+  }
+  /* line 493, ../wp-content/themes/brainworks/style.scss */
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  /* line 497, ../wp-content/themes/brainworks/style.scss */
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 504, ../wp-content/themes/brainworks/style.scss */
+  .section {
+    padding: 25px 0;
+  }
+  /* line 507, ../wp-content/themes/brainworks/style.scss */
+  .section-title {
+    font-size: 20px;
+  }
+  /* line 512, ../wp-content/themes/brainworks/style.scss */
+  p {
+    font-size: 16px;
+  }
+  /* line 516, ../wp-content/themes/brainworks/style.scss */
+  .diamond-wrapper {
+    margin-bottom: 20px;
+  }
+  /* line 520, ../wp-content/themes/brainworks/style.scss */
+  .adv-item {
+    display: block;
+  }
+  /* line 525, ../wp-content/themes/brainworks/style.scss */
+  .form-row {
+    margin-bottom: 15px;
+  }
+  /* line 529, ../wp-content/themes/brainworks/style.scss */
+  .form-field {
+    font-size: 16px;
+    padding: 12px 15px;
+    border-width: 2px;
+  }
+  /* line 537, ../wp-content/themes/brainworks/style.scss */
+  .btn-default {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* line 545, ../wp-content/themes/brainworks/style.scss */
+  .section-title {
+    text-transform: none;
+  }
+  /* line 550, ../wp-content/themes/brainworks/style.scss */
+  .footer {
+    padding: 10px 0;
+  }
+  /* line 553, ../wp-content/themes/brainworks/style.scss */
+  .footer p {
+    font-size: 14px;
+  }
 }
